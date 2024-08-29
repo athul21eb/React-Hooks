@@ -1,0 +1,22 @@
+.Counter{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+
+}
+.Maindiv{
+    text-align: center;
+}
+
+.button{
+    
+    background-color: hwb(180 31% 3% / 0.842);
+    width: 90px;
+    height: 50px;
+    display: inline;
+    border: none;
+    margin: 0 5px;
+    padding: 5px;
+    border-radius: 10px;
+    color: hsl(0, 50%, 1%);
+}

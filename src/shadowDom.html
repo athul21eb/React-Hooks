@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shadow DOM Example</title>
+</head>
+<body>
+  <div id="shadow-host"></div>
+  <p>hi inside normal dom</p>
+
+  <script>
+    // Select the shadow host element
+    const shadowHost = document.getElementById('shadow-host');
+
+    // Create a shadow root
+    const shadowRoot = shadowHost.attachShadow({ mode: 'open' });
+
+    // Add some content to the shadow root
+    shadowRoot.innerHTML = `
+      <style>
+        p {
+          color: blue;
+          font-weight: bold;
+        }
+      </style>
+      <p>This is inside the shadow DOM!</p>
+    `;
+  </script>
+</body>
+</html>
